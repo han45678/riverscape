@@ -54,65 +54,55 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center; // 垂直置中
-  align-items: center; // 水平置中
+  justify-content: center;
+  align-items: center;
   width: 100%;
 
-  // --- Mobile First 設定 (參考範本邏輯) ---
-  height: sizem(800); // 依據手機版設計稿高度設定，或設為 100vh
+  height: 100dvh;
   background-image: url('./s1/bg.jpg');
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
 
-  // 基礎字體大小基準 (手機)
   font-size: sizem(16);
 
-  // --- Desktop 設定 ---
   @media screen and (min-width: 768px) {
-    height: 100vh;
     min-height: size(900);
     background-image: url('./s1/bg.jpg');
     background-position: center;
     font-size: size(16); // 基礎字體大小基準 (電腦)
   }
 
-  // --- 文字區塊結構 ---
   .txt {
-    text-align: center;
     position: relative;
     z-index: 2;
-    // 手機版位置微調 (往上提一點以避開下方留白)
-    margin-bottom: sizem(100);
-
+    width: calc(100% - sizem(100));
     @media screen and (min-width: 768px) {
-      margin-bottom: size(80);
+      width: auto;
+      text-align: center;
     }
   }
 
-  // Chill Style
   .t1 {
-    font-style: italic;
+    text-align: left;
     font-weight: 300;
-    // 手機版尺寸
     font-size: sizem(24);
-    letter-spacing: 0.05em;
-    margin-bottom: sizem(10);
+    letter-spacing: sizem(1);
+    margin-bottom: sizem(25);
+    font-style: italic;
 
     @media screen and (min-width: 768px) {
-      // 電腦版尺寸
       font-size: size(32);
-      margin-bottom: size(15);
+      margin-bottom: size(35);
+      letter-spacing: size(3);
     }
   }
 
-  // 主標題 (台北城南...)
   .t2 {
     font-weight: 500;
     line-height: 1.3;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    // 手機版尺寸
     font-size: sizem(52);
     letter-spacing: sizem(2);
 
@@ -134,13 +124,13 @@
     // 手機版尺寸
     font-size: sizem(20);
     letter-spacing: sizem(2);
-    margin-top: sizem(30);
+    margin-top: sizem(170);
 
     @media screen and (min-width: 768px) {
       // 電腦版尺寸
       font-size: size(28);
       letter-spacing: size(3);
-      margin-top: size(40);
+      margin-top: size(250);
     }
   }
 

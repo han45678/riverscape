@@ -1,69 +1,162 @@
 <template>
-  <article class="lifestyle font-['Noto_Serif_TC',serif]" id="lifestyle">
-    
-    <div class="grid-box top-grid">
-      <div 
-        v-for="(img, idx) in topImages" 
-        :key="'top'+idx" 
+  <article
+    class="lifestyle font-['Noto_Serif_TC',serif]"
+    id="lifestyle"
+  >
+    <div class="grid-box">
+      <div
         class="img-item"
-        :class="`item-${idx+1}`"
-        data-aos="fade-up" 
-        :data-aos-delay="idx * 100"
+        data-aos="fade-up"
       >
-        <img :src="img" alt="Lifestyle Top">
+        <img
+          src="http://placehold.jp/320x320.png"
+          alt="pic"
+        />
+      </div>
+      <div
+        class="img-item"
+        data-aos="fade-up"
+      >
+        <img
+          src="http://placehold.jp/320x320.png"
+          alt="pic"
+        />
+      </div>
+      <div
+        class="img-item"
+        data-aos="fade-up"
+      >
+        <img
+          src="http://placehold.jp/320x320.png"
+          alt="pic"
+        />
+      </div>
+      <div
+        class="img-item"
+        data-aos="fade-up"
+      >
+        <img
+          src="http://placehold.jp/320x320.png"
+          alt="pic"
+        />
+      </div>
+      <div
+        class="img-item"
+        data-aos="fade-up"
+      >
+        <img
+          src="http://placehold.jp/320x320.png"
+          alt="pic"
+        />
+      </div>
+      <div
+        class="img-item"
+        data-aos="fade-up"
+      >
+        <img
+          src="http://placehold.jp/320x320.png"
+          alt="pic"
+        />
       </div>
     </div>
 
     <div class="txt-content">
-      <h3 class="sub-title" data-aos="fade-up" data-aos-delay="200">發現台北城南的生活__</h3>
-      <h2 class="main-title" data-aos="fade-up" data-aos-delay="400">一種講究的態度</h2>
-      
-      <div class="en-group" data-aos="fade-up" data-aos-delay="600">
-        <p>The New Way to Live in South Taipei —</p>
-        <p>Chill, Classy, and Just Right</p>
-      </div>
-
-      <span class="caption" data-aos="fade-in" data-aos-delay="800">實景圖及情境示意圖</span>
-    </div>
-
-    <div class="grid-box bot-grid">
-      <div 
-        v-for="(img, idx) in botImages" 
-        :key="'bot'+idx" 
-        class="img-item"
-        :class="`item-${idx+1}`"
-        data-aos="fade-up" 
-        :data-aos-delay="idx * 100"
-        data-aos-offset="50"
+      <h3
+        class="sub-title"
+        data-aos="fade-up"
+        data-aos-delay="200"
       >
-        <img :src="img" alt="Lifestyle Bottom">
+        發現台北城南的生活
+      </h3>
+      <h2
+        class="main-title"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
+        一種講究的態度
+      </h2>
+
+      <div class="en-group">
+        <p
+          data-aos="fade-up"
+          data-aos-delay="600"
+        >
+          The New Way to Live in South Taipei —
+        </p>
+        <p
+          data-aos="fade-up"
+          data-aos-delay="800"
+        >
+          Chill, Classy, and Just Right
+        </p>
       </div>
+
+      <span
+        class="caption"
+        data-aos="fade-in"
+        data-aos-delay="800"
+        >實景圖及情境示意圖</span
+      >
     </div>
 
+    <div class="grid-box">
+      <div
+        class="img-item"
+        data-aos="fade-up"
+      >
+        <img
+          src="http://placehold.jp/320x320.png"
+          alt="pic"
+        />
+      </div>
+      <div
+        class="img-item"
+        data-aos="fade-up"
+      >
+        <img
+          src="http://placehold.jp/320x320.png"
+          alt="pic"
+        />
+      </div>
+      <div
+        class="img-item"
+        data-aos="fade-up"
+      >
+        <img
+          src="http://placehold.jp/320x320.png"
+          alt="pic"
+        />
+      </div>
+      <div
+        class="img-item"
+        data-aos="fade-up"
+      >
+        <img
+          src="http://placehold.jp/320x320.png"
+          alt="pic"
+        />
+      </div>
+      <div
+        class="img-item"
+        data-aos="fade-up"
+      >
+        <img
+          src="http://placehold.jp/320x320.png"
+          alt="pic"
+        />
+      </div>
+      <div
+        class="img-item"
+        data-aos="fade-up"
+      >
+        <img
+          src="http://placehold.jp/320x320.png"
+          alt="pic"
+        />
+      </div>
+    </div>
   </article>
 </template>
-
-<script setup>
-import { ref } from 'vue';
-
-// 圖片路徑 (請替換為實際專案路徑)
-// 為了符合電腦版5張，手機版3張的邏輯，這裡配置5張圖
-const topImages = ref([
-  'http://placehold.jp/320x320.png', // 1. 大圖 (手機左)
-  'http://placehold.jp/320x320.png', // 2. 小圖 (手機右上)
-  'http://placehold.jp/320x320.png', // 3. 小圖 (手機右下)
-  'http://placehold.jp/320x320.png', // 4. 電腦版額外圖
-  'http://placehold.jp/320x320.png', // 5. 電腦版額外圖
-]);
-
-const botImages = ref([
-  'http://placehold.jp/320x320.png', // 1. 小圖 (手機左上)
-  'http://placehold.jp/320x320.png', // 2. 小圖 (手機左下)
-  'http://placehold.jp/320x320.png', // 3. 大圖 (手機右)
-  'http://placehold.jp/320x320.png', // 4. 電腦版額外圖
-  'http://placehold.jp/320x320.png', // 5. 電腦版額外圖
-]);
-</script>
 
 <style lang="scss" scoped>
 @import '@/assets/style/function.scss';
@@ -73,7 +166,7 @@ const botImages = ref([
   width: 100%;
   background-color: #fff;
   overflow: hidden;
-  
+
   // Mobile first padding
   padding-bottom: sizem(50);
 
@@ -90,20 +183,21 @@ const botImages = ref([
 .grid-box {
   display: grid;
   width: 100%;
-  
-  // --- 手機版佈局 (Mosaic Style) ---
-  grid-template-columns: 1fr 1fr; // 兩欄
-  gap: sizem(4); // 手機版間距
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 0;
+  gap: sizem(2.5);
+  @media screen and (min-width: 768px) {
+    gap: size(5);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
 
   .img-item {
     position: relative;
     overflow: hidden;
     width: 100%;
     height: 100%;
-    
-    // 預設比例，讓圖片在手機上撐開
-    aspect-ratio: 1/1; 
+
+    aspect-ratio: 1/1;
 
     img {
       width: 100%;
@@ -117,119 +211,93 @@ const botImages = ref([
       transform: scale(1.1);
     }
   }
-
-  // --- 手機版隱藏多餘圖片 (只顯示前3張) ---
-  .item-4, .item-5 {
-    display: none;
-  }
-
-  // --- 針對不同 Grid 做手機版拼貼 ---
-  
-  // 上方 Grid: 左大(跨兩列) / 右兩小
-  &.top-grid {
-    .item-1 {
-      grid-row: 1 / 3; // 第一張圖跨兩列
-      grid-column: 1 / 2;
-    }
-    // item-2, item-3 自動排在右邊
-  }
-
-  // 下方 Grid: 左兩小 / 右大(跨兩列)
-  &.bot-grid {
-    .item-1 {
-       // 左上
-    }
-    .item-2 {
-       // 左下
-    }
-    .item-3 {
-      grid-row: 1 / 3; // 第三張圖跨兩列
-      grid-column: 2 / 3;
-    }
-  }
-
-  // --- 電腦版佈局 (5 Columns) ---
-  @media screen and (min-width: 768px) {
-    grid-template-columns: repeat(5, 1fr); // 五欄
-    gap: 0; // 電腦版無間距
-
-    // 恢復所有圖片顯示
-    .item-4, .item-5 {
-      display: block;
-    }
-
-    // 重置所有跨欄設定，變回一列
-    &.top-grid .item-1,
-    &.bot-grid .item-3 {
-      grid-row: auto;
-      grid-column: auto;
-    }
-
-    .img-item {
-      aspect-ratio: 4/3; // 電腦版改為長方形比例
-    }
-  }
 }
 
 // 文字內容區塊
 .txt-content {
   position: relative;
-  text-align: center;
-  padding: sizem(60) sizem(20);
-  color: #8dbf43; // 主色調 (草綠)
+  padding: sizem(15) sizem(50) sizem(50) sizem(50);
+  color: #8dbf43;
 
   @media screen and (min-width: 768px) {
     padding: size(70) 0;
   }
 
   .sub-title {
-    font-size: sizem(15);
+    font-size: sizem(18);
     letter-spacing: 0.1em;
     margin-bottom: sizem(10);
-    font-weight: 500;
+    font-weight: 600;
 
     @media screen and (min-width: 768px) {
-      font-size: size(24);
-      margin-bottom: size(15);
+      margin-bottom: size(20);
+      width: size(500);
+      margin-left: auto;
+      margin-right: auto;
+      font-size: size(38);
+      &::after {
+        content: '＿';
+        display: inline-block;
+        margin-left: size(-15);
+      }
     }
   }
 
   .main-title {
     font-size: sizem(32);
-    margin-bottom: sizem(20);
-    font-weight: 500; // 使用 serif 字體原本的粗度
+    font-weight: 600;
     letter-spacing: 0.05em;
 
     @media screen and (min-width: 768px) {
-      font-size: size(60);
-      margin-bottom: size(25);
+      font-size: size(64);
+      width: size(500);
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
   .en-group {
-    color: #999;
-    font-size: sizem(13);
+    color: #808080;
+    font-size: sizem(12);
     line-height: 1.6;
-    letter-spacing: 0.05em;
-    font-weight: 400;
+    font-weight: 500;
+    padding-left: sizem(50);
+    padding-right: sizem(50);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(50%);
+    z-index: 1;
+    p {
+      &:nth-child(2) {
+        color: #fff;
+      }
+    }
 
     @media screen and (min-width: 768px) {
-      font-size: size(18);
+      font-size: size(24);
+      width: size(500);
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 
   .caption {
     display: block;
-    margin-top: sizem(40);
     font-size: sizem(10);
-    color: #ccc;
+    color: #808080;
     text-align: center;
+    position: absolute;
+    top: sizem(5);
+    right: sizem(5);
+    font-size: sizem(8);
 
     @media screen and (min-width: 768px) {
-      position: absolute;
       right: size(20);
-      bottom: size(10);
-      margin-top: 0;
+      top: size(10);
       font-size: size(12);
     }
   }
