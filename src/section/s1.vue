@@ -93,7 +93,6 @@
 
   // Chill Style
   .t1 {
-    font-family: 'Times New Roman', serif;
     font-style: italic;
     font-weight: 300;
     // 手機版尺寸
@@ -198,7 +197,6 @@
       }
 
       .en {
-        font-family: sans-serif;
         color: #999;
         font-weight: 400;
         font-size: sizem(10);

@@ -13,13 +13,13 @@ const logos = ref(Array.from({ length: 18 }).map((_, i) => ({
 </script>
 
 <template>
-  <section class="s7 font-['Times_New_Roman',serif]" id="s7">
+  <section class="s7 font-['Noto_Serif_TC',serif]" id="s7">
     
     <div class="text-container">
       <div class="content-wrap" data-aos="fade-right">
         <h2 class="main-title">
           極致選品<br>
-          為生活注入國際規格的講究
+          <span>為生活注入國際規格的講究</span>
         </h2>
         
         <p class="desc">
@@ -100,16 +100,18 @@ $color-text-white: #ffffff;
     }
 
     .main-title {
-      font-size: 2.2em;
+      font-size:size(44);
       line-height: 1.3;
       margin-bottom: 0.8em;
       font-weight: 400;
+      span{
+        font-size:size(35);
+      }
     }
 
     .desc {
-      font-size: 1.1em;
+      font-size:size(24);
       line-height: 1.8;
-      font-family: sans-serif;
       font-weight: 300;
       opacity: 0.9;
     }
@@ -119,13 +121,12 @@ $color-text-white: #ffffff;
       position: absolute;
       background-color: $color-green-tag;
       color: #333; // 標籤文字深色
-      font-family: serif;
       
       // 手機版位置：掛在綠色區塊右下角，稍微凸出
       bottom: sizem(-20); 
       right: 0;
       padding: 0.8em 2em;
-      font-size: 1.1em;
+      font-size:size(20);
       z-index: 10;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 

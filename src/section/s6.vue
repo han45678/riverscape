@@ -5,7 +5,7 @@ const buildingImg = 'http://placehold.jp/730x730.jpg';
 </script>
 
 <template>
-  <section class="s6 font-['Times_New_Roman',serif]" id="s6">
+  <section class="s6 font-['Noto_Serif_TC',serif]" id="s6">
     <div class="layout-grid">
       
       <div class="bar-area"></div>
@@ -126,7 +126,6 @@ $color-white: #ffffff;
       color: rgba(255,255,255,0.8);
       font-size: 0.8em;
       text-shadow: 0 0 4px rgba(0,0,0,0.5);
-      font-family: sans-serif;
       
       @media screen and (min-width: 768px) {
         font-size: 0.25em;
@@ -164,21 +163,23 @@ $color-white: #ffffff;
 
     .main-title {
       color: $color-green;
-      font-size: 2em;
+      font-size: size(44);
       line-height: 1.3;
       margin-bottom: 0.8em;
       font-weight: 400;
 
       .block {
         display: block; // 強制換行
+        &:nth-child(2){
+          font-size: size(36);
+        }
       }
     }
 
     .sub-title {
       color: $color-text-dark;
-      font-size: 1.1em;
-      margin-bottom: 2em;
-      font-family: sans-serif;
+      font-size:size(24);
+      margin-bottom:size(14);
       line-height: 1.6;
 
       .mobile-only {
@@ -191,7 +192,7 @@ $color-white: #ffffff;
 
     .desc {
       color: $color-text-gray;
-      font-size: 1em;
+      font-size: size(20);
       line-height: 1.8;
       margin-bottom: 2.5em;
       text-align: justify; // 內文左右對齊 (包含手機與電腦)
@@ -206,8 +207,7 @@ $color-white: #ffffff;
       background-color: $color-green;
       color: $color-white;
       padding: 0.8em 2.5em;
-      font-size: 1em;
-      font-family: serif; // 標籤使用襯線體
+      font-size: size(20);
       
       @media screen and (min-width: 768px) {
         float: left; // 電腦版標籤靠左 (依照圖示)

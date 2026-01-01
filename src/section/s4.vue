@@ -7,7 +7,7 @@ const isMobile = computed(() => globals?.$isMobile ? globals.$isMobile() : false
 </script>
 
 <template>
-  <section class="hero-section font-['Times_New_Roman',serif]" id="hero">
+  <section class="hero-section font-['Noto_Serif_TC',serif]" id="hero">
     
     <div class="txt-group">
       <h1 class="main-title" data-aos="fade-up" data-aos-delay="0">
@@ -141,7 +141,6 @@ $color-white: #ffffff;
     bottom: 0.5em;
     font-size: 0.6em; // 手機版
     opacity: 0.7;
-    font-family: sans-serif; // 聲明文字用無襯線體較清晰
     font-style: normal;
 
     @media screen and (min-width: 768px) {

@@ -49,19 +49,19 @@ import { ref } from 'vue';
 // 圖片路徑 (請替換為實際專案路徑)
 // 為了符合電腦版5張，手機版3張的邏輯，這裡配置5張圖
 const topImages = ref([
-  'https://images.unsplash.com/photo-1562771242-a02d9090c90c?auto=format&fit=crop&w=800&q=80', // 1. 大圖 (手機左)
-  'https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=600&q=80', // 2. 小圖 (手機右上)
-  'https://images.unsplash.com/photo-1535131749006-b7f58c99034b?auto=format&fit=crop&w=600&q=80', // 3. 小圖 (手機右下)
-  'https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=600&q=80', // 4. 電腦版額外圖
-  'https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?auto=format&fit=crop&w=600&q=80', // 5. 電腦版額外圖
+  'http://placehold.jp/320x320.png', // 1. 大圖 (手機左)
+  'http://placehold.jp/320x320.png', // 2. 小圖 (手機右上)
+  'http://placehold.jp/320x320.png', // 3. 小圖 (手機右下)
+  'http://placehold.jp/320x320.png', // 4. 電腦版額外圖
+  'http://placehold.jp/320x320.png', // 5. 電腦版額外圖
 ]);
 
 const botImages = ref([
-  'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=600&q=80', // 1. 小圖 (手機左上)
-  'https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?auto=format&fit=crop&w=600&q=80', // 2. 小圖 (手機左下)
-  'https://images.unsplash.com/photo-1541625602330-2277a4c46182?auto=format&fit=crop&w=800&q=80', // 3. 大圖 (手機右)
-  'https://images.unsplash.com/photo-1449824913929-2b3a3e366185?auto=format&fit=crop&w=600&q=80', // 4. 電腦版額外圖
-  'https://images.unsplash.com/photo-1599474924187-334a405be655?auto=format&fit=crop&w=600&q=80', // 5. 電腦版額外圖
+  'http://placehold.jp/320x320.png', // 1. 小圖 (手機左上)
+  'http://placehold.jp/320x320.png', // 2. 小圖 (手機左下)
+  'http://placehold.jp/320x320.png', // 3. 大圖 (手機右)
+  'http://placehold.jp/320x320.png', // 4. 電腦版額外圖
+  'http://placehold.jp/320x320.png', // 5. 電腦版額外圖
 ]);
 </script>
 

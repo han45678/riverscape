@@ -5,7 +5,7 @@
 
 <template>
   <article
-    class="s5 font-['Times_New_Roman',serif]"
+    class="s5 font-['Noto_Serif_TC',serif]"
     id="s5"
   >
     <div
@@ -125,7 +125,7 @@ $tag-text: #9cbd46;
     }
 
     .main-title {
-      font-size: 1.8em;
+      font-size: size(45);
       line-height: 1.3;
       color: $color-green;
       margin-bottom: 0.4em;
@@ -133,10 +133,9 @@ $tag-text: #9cbd46;
     }
 
     .sub-title {
-      font-size: 0.85em;
+      font-size: size(24);
       color: #ccc;
       letter-spacing: 0.05em;
-      font-family: sans-serif; // 副標題可用無襯線體
     }
   }
 
@@ -184,7 +183,6 @@ $tag-text: #9cbd46;
       padding: 0.8em 0.3em;
       font-size: 0.8em;
       letter-spacing: 0.2em;
-      font-family: 'Times New Roman', serif;
       box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.2);
 
       @media (max-width: 768px) {
@@ -209,11 +207,10 @@ $tag-text: #9cbd46;
     }
 
     p {
-      font-size: 0.7em; // 相對於 font-size: 55/14
+      font-size: size(20); 
       line-height: 1.8;
       color: #ddd;
       text-align: justify; // 左右對齊
-      font-family: sans-serif;
       letter-spacing: 0.05em;
     }
   }
