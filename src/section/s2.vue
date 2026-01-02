@@ -166,12 +166,9 @@
   width: 100%;
   background-color: #fff;
   overflow: hidden;
-
-  // Mobile first padding
   padding-bottom: sizem(50);
 
   @media screen and (min-width: 768px) {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
