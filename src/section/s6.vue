@@ -1,16 +1,13 @@
-<script setup>
-// s6 為單張靜態圖，不需 Swiper
-// 請替換為您的實際圖片路徑
-const buildingImg = 'http://placehold.jp/730x730.jpg'; 
-</script>
-
 <template>
   <section class="s6 font-['Noto_Serif_TC',serif]" id="s6">
     <div class="layout-grid">
       
-      <div class="bar-area"></div>
+      <div class="bar-area">
+        <img src="./s6/bar-area.jpg" alt="bar-area">
+      </div>
 
-      <div class="img-area" :style="{ backgroundImage: `url(${buildingImg})` }" data-aos="fade-in">
+      <div class="img-area" data-aos="fade-in">
+        <img src="./s6/pic01.jpg" alt="pic">
         <div class="disclaimer">外觀3D示意圖</div>
       </div>
 
@@ -82,7 +79,7 @@ $color-white: #ffffff;
 
     // 電腦版 Grid 設定
     @media screen and (min-width: 768px) {
-      grid-template-columns: size(80) 1fr 1.2fr; // Bar寬度, 文字區, 圖片區
+      grid-template-columns: size(80) calc(50% - size(80)) 50%; // Bar寬度, 文字區, 圖片區
       grid-template-rows: 1fr;
       grid-template-areas: "bar txt img";
     }
@@ -91,16 +88,20 @@ $color-white: #ffffff;
   // 1. 綠色裝飾條
   .bar-area {
     grid-area: bar;
-    background-color: $color-green;
-    
-    // 手機版：橫條在頂部
+    background-color: $color-white;
     width: 100%;
     height: sizem(20);
-
+    
     // 電腦版：直條在左側 (滿高)
     @media screen and (min-width: 768px) {
       width: 100%;
       height: 100%;
+    }
+
+    img{
+      width: 100%;
+      height: 85%;
+      object-fit: cover;
     }
   }
 
@@ -109,7 +110,6 @@ $color-white: #ffffff;
     grid-area: img;
     position: relative;
     width: 100%;
-    // 手機版高度，可依圖片比例微調
     height: sizem(500); 
     background-position: center;
     background-size: cover;
@@ -117,6 +117,12 @@ $color-white: #ffffff;
 
     @media screen and (min-width: 768px) {
       height: 100%; // 電腦版滿高
+    }
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     .disclaimer {
