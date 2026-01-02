@@ -1,6 +1,32 @@
 <script setup>
-// 假設 Swiper 已經全域註冊，這裡直接使用
-// 如果需要特定設定 (如 Autoplay)，可透過 props 傳入或在全域設定
+import { Splide, SplideSlide } from '@splidejs/vue-splide';
+import '@splidejs/vue-splide/css';
+
+// Splide 設定
+const splideOptions = {
+  type: 'loop',        // ✅ 修改這裡：設定為 'loop' 即可達成無窮循環
+  autoplay: true,      // 開啟自動播放
+  interval: 5000,      // 每 5 秒切換
+  speed: 1000,         // 切換速度 1 秒
+  arrows: false,       // 隱藏左右箭頭
+  pagination: false,   // 隱藏下方分頁點
+  drag: true,          // 允許拖曳
+  perPage: 1,          // 每頁顯示一張
+};
+
+// 輪播資料
+const slideData = [
+  {
+    src: new URL('./s5/pic01.webp', import.meta.url).href,
+    alt: '鼎吉中山',
+    text: '鼎吉中山'
+  },
+  {
+    src: new URL('./s5/pic01.webp', import.meta.url).href,
+    alt: '鼎吉中山',
+    text: '鼎吉中山'
+  }
+];
 </script>
 
 <template>
@@ -27,19 +53,28 @@
     >
       <div class="brand-tag">Brand</div>
 
-      <swiper
-        class="my-swiper"
-        :autoplay="{ delay: 3000, disableOnInteraction: false }"
-        :loop="true"
-        :speed="1000"
+      <Splide
+        class="my-splide"
+        :options="splideOptions"
       >
-        <swiper-slide>
-          <img
-            src="./s5/pic01.webp"
-            alt="pic"
-          />
-        </swiper-slide>
-      </swiper>
+        <SplideSlide
+          v-for="(item, index) in slideData"
+          :key="index"
+          class="slide"
+        >
+          <div class="slide_item">
+            <div class="item_pic">
+              <img
+                :src="item.src"
+                :alt="item.alt"
+              />
+              <span class="caption font-['Noto_Sans_TC']">
+                {{ item.text }}
+              </span>
+            </div>
+          </div>
+        </SplideSlide>
+      </Splide>
     </div>
 
     <div
@@ -59,8 +94,8 @@
 @import '@/assets/style/function.scss';
 
 // 顏色變數
-$color-bg: #2b2b2b; // 深灰背景
-$color-green: #9cbd46; // 標題綠色
+$color-bg: #2b2b2b;
+$color-green: #9cbd46;
 $color-white: #ffffff;
 $tag-bg: #ffffff;
 $tag-text: #9cbd46;
@@ -75,8 +110,8 @@ $tag-text: #9cbd46;
   justify-content: center;
   align-items: center;
   padding: sizem(60) sizem(50) sizem(20) sizem(50);
-
   font-size: sizem(14);
+
   @media screen and (min-width: 768px) {
     height: 100vh;
     padding: 0 size(115);
@@ -90,14 +125,14 @@ $tag-text: #9cbd46;
 
   .txt-header {
     width: 100%;
-    margin-bottom: 1.5em;
+    margin-bottom: sizem(15);
     text-align: left;
-margin-bottom:sizem(15);
+
     @media screen and (min-width: 768px) {
       grid-column: 2;
       grid-row: 1;
       align-self: end;
-      margin-bottom:size(15);
+      margin-bottom: size(15);
     }
 
     .main-title {
@@ -105,6 +140,7 @@ margin-bottom:sizem(15);
       color: $color-green;
       margin-bottom: sizem(20);
       font-weight: 400;
+
       @media screen and (min-width: 768px) {
         font-size: size(45);
         margin-bottom: size(30);
@@ -140,18 +176,6 @@ margin-bottom:sizem(15);
       align-self: center;
     }
 
-    .my-swiper {
-      width: 100%;
-      height: 100%;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-      }
-    }
-
     .brand-tag {
       position: absolute;
       top: 0;
@@ -172,6 +196,55 @@ margin-bottom:sizem(15);
         font-size: size(20);
         width: size(50);
         height: size(145);
+      }
+    }
+
+    // Splide 樣式調整
+    .my-splide {
+      width: 100%;
+      height: 100%;
+
+      // 強制 Splide track 撐滿高度
+      :deep(.splide__track) {
+        height: 100%;
+      }
+
+      :deep(.splide__slide) {
+        height: 100%;
+      }
+    }
+
+    .slide_item {
+      width: 100%;
+      height: 100%;
+    }
+
+    .item_pic {
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; // 保持原本的裁切效果
+        display: block;
+      }
+
+      // 圖片上的文字
+      .caption {
+        position: absolute;
+        top: sizem(10);
+        right: sizem(10);
+        color: #fff;
+        z-index: 2;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        font-size: sizem(8);
+        @media screen and (min-width: 768px) {
+          font-size: size(14);
+          top: size(10);
+          right: size(10);
+        }
       }
     }
   }
