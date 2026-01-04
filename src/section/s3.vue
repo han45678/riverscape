@@ -336,6 +336,9 @@
         margin-top: size(170);
         width: 52%;
       }
+      img{
+        width: 100%;
+      }
     }
   }
 }

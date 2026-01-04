@@ -100,20 +100,25 @@ $color-white: #ffffff;
   // 1. 綠色裝飾條
   .bar-area {
     grid-area: bar;
-    background-color: $color-white;
+    background-color: #8fb538;
     width: 100%;
-    height: sizem(20);
+    height: sizem(25);
 
     // 電腦版：直條在左側 (滿高)
     @media screen and (min-width: 768px) {
       width: 100%;
       height: 100%;
+      background-color: $color-white;
     }
 
     img {
       width: 100%;
       height: 85%;
       object-fit: cover;
+      display: none;
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
     }
   }
 

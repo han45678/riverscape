@@ -27,7 +27,7 @@
     <S5 />
     <S6 />
     <S7 />
-    <!-- <Order /> -->
+    <Order />
   </div>
 </template>
 
