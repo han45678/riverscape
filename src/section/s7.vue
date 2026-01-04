@@ -20,7 +20,10 @@ import { ref } from 'vue';
       </div>
       <div class="materials">Architecture Materials</div>
     </div>
-    <div class="logo"></div>
+    <div class="logo">
+      <img src="./s7/logo1.jpg" alt="logo">
+      <img src="./s7/logo2.jpg" alt="logo">
+    </div>
   </section>
 </template>
 
@@ -37,7 +40,10 @@ $color-text-white: #ffffff;
   @apply relative;
   width: 100%;
   background-color: $color-green-bg;
-  font-size: sizem(14);
+
+  padding-top: sizem(65);
+  padding-left: sizem(50);
+  padding-bottom: sizem(20);
 
   @media screen and (min-width: 768px) {
     padding-top: size(370);
@@ -47,52 +53,103 @@ $color-text-white: #ffffff;
   }
 
   .text {
-    width: 30%;
     color: #fff;
     display: flex;
     flex-wrap: wrap;
-    
+    position: relative;
+    @media screen and (min-width: 768px) {
+      width: 30%;
+    }
     .text_content {
-      padding-right: size(100);
+      padding-right: sizem(50);
+      margin-bottom: sizem(15);
+      @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+        padding-right: size(100);
+      }
 
       h2 {
-        font-size: size(44);
         font-weight: 600;
-        margin-bottom: size(30);
+        font-size: sizem(28);
+        margin-bottom: sizem(20);
+
+        @media screen and (min-width: 768px) {
+          margin-bottom: size(30);
+          font-size: size(44);
+        }
         span {
           display: block;
-          font-size: size(34);
+          font-size: sizem(22);
+
+          @media screen and (min-width: 768px) {
+            font-size: size(34);
+          }
         }
       }
 
       p {
         text-align: justify;
-        font-size: size(24);
+
         font-weight: 500;
         line-height: 1.6;
+        @media screen and (min-width: 768px) {
+          font-size: size(24);
+        }
       }
     }
 
     .materials {
       margin-top: auto;
       background-color: #c7ff69;
-      width: 100%;
-      height: size(50);
 
       color: #000;
       text-align: center;
-      font-size: size(20);
+
       font-weight: 500;
       line-height: 1.7;
       display: flex;
       justify-content: center;
       align-items: center;
+
+      width: sizem(160);
+      height: sizem(37);
+
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: translateY(50%);
+
+      font-size: sizem(10);
+      @media screen and (min-width: 768px) {
+        width: 100%;
+        height: size(50);
+        font-size: size(20);
+        position: static;
+        transform: unset;
+      }
     }
   }
   .logo {
-    width: 70%;
-    height: 455px;
     background-color: #fff;
+    padding-left: sizem(50);
+    padding-right: sizem(50);
+    padding-top:  sizem(70);
+    height: sizem(405);
+    @media screen and (min-width: 768px) {
+      padding-top:  size(20);
+      padding-left: size(30);
+      padding-right: size(30);
+      width: 70%;
+      height: size(455);
+      display: flex;
+    }
+    img{
+      height: auto;
+      width: 100%;
+      @media screen and (min-width: 768px) {
+      width: 50%;
+      }
+    }
   }
 }
 </style>

@@ -48,7 +48,6 @@ const isMobile = computed(() =>
 </template>
 
 <style lang="scss" scoped>
-// 引入你的 function.scss 以使用 size() 和 sizem()
 @import '@/assets/style/function.scss';
 
 $color-green: #a8d664;

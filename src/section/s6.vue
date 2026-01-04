@@ -1,38 +1,50 @@
 <template>
-  <section class="s6 font-['Noto_Serif_TC',serif]" id="s6">
+  <section
+    class="s6 font-['Noto_Serif_TC',serif]"
+    id="s6"
+  >
     <div class="layout-grid">
-      
       <div class="bar-area">
-        <img src="./s6/bar-area.jpg" alt="bar-area">
+        <img
+          src="./s6/bar-area.jpg"
+          alt="bar-area"
+        />
       </div>
 
-      <div class="img-area" data-aos="fade-in">
-        <img src="./s6/pic01.jpg" alt="pic">
+      <div
+        class="img-area"
+        data-aos="fade-in"
+      >
+        <img
+          src="./s6/pic01.jpg"
+          alt="pic"
+        />
         <div class="disclaimer">外觀3D示意圖</div>
       </div>
 
-      <div class="txt-area" data-aos="fade-up" data-aos-delay="200">
+      <div
+        class="txt-area"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
         <div class="content-box">
-          
           <h2 class="main-title">
             <span class="block">以水為靈感</span>
             <span class="block">雕塑流動的城市線條</span>
           </h2>
 
           <div class="sub-title">
-            新店溪首排 × 低檯度 × 大開窗 <br class="mobile-only"> × 建築即風景
+            新店溪首排 × 低檯度 × 大開窗 <br class="mobile-only" />
+            × 建築即風景
           </div>
 
           <p class="desc">
             從新店溪水岸的波光律動汲取靈感，鼎吉水岸外觀以「流動」為設計語彙，描繪自然與建築的交融關係。採用低檯度設計，延伸水平視野；搭配大面寬玻璃與簡潔垂直線條，勾勒出極簡而具韻律感的立面藝術。建築不再是冰冷的量體，而是一座與風景共鳴的藝術作品。
           </p>
 
-          <div class="tag">
-            Architecture
-          </div>
+          <div class="tag">Architecture</div>
         </div>
       </div>
-
     </div>
   </section>
 </template>
@@ -41,7 +53,7 @@
 @import '@/assets/style/function.scss';
 
 // 顏色定義 (S6 的綠色偏草綠)
-$color-green: #90b84c; 
+$color-green: #90b84c;
 $color-text-dark: #595757;
 $color-text-gray: #888888;
 $color-white: #ffffff;
@@ -51,7 +63,7 @@ $color-white: #ffffff;
   width: 100%;
   background-color: $color-white;
   color: $color-text-dark;
-  
+
   // --- Mobile Base ---
   font-size: sizem(14);
 
@@ -68,20 +80,20 @@ $color-white: #ffffff;
     width: 100%;
     height: 100%;
     display: grid;
-    
+
     // 手機版 Grid 設定
     grid-template-columns: 1fr;
     grid-template-rows: auto auto 1fr; // Bar, Image, Text
-    grid-template-areas: 
-      "bar"
-      "img"
-      "txt";
+    grid-template-areas:
+      'bar'
+      'img'
+      'txt';
 
     // 電腦版 Grid 設定
     @media screen and (min-width: 768px) {
       grid-template-columns: size(80) calc(50% - size(80)) 50%; // Bar寬度, 文字區, 圖片區
       grid-template-rows: 1fr;
-      grid-template-areas: "bar txt img";
+      grid-template-areas: 'bar txt img';
     }
   }
 
@@ -91,14 +103,14 @@ $color-white: #ffffff;
     background-color: $color-white;
     width: 100%;
     height: sizem(20);
-    
+
     // 電腦版：直條在左側 (滿高)
     @media screen and (min-width: 768px) {
       width: 100%;
       height: 100%;
     }
 
-    img{
+    img {
       width: 100%;
       height: 85%;
       object-fit: cover;
@@ -110,7 +122,7 @@ $color-white: #ffffff;
     grid-area: img;
     position: relative;
     width: 100%;
-    height: sizem(500); 
+    height: sizem(500);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -119,7 +131,7 @@ $color-white: #ffffff;
       height: 100%; // 電腦版滿高
     }
 
-    img{
+    img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -129,10 +141,10 @@ $color-white: #ffffff;
       position: absolute;
       bottom: 10px;
       right: 10px;
-      color: rgba(255,255,255,0.8);
+      color: rgba(255, 255, 255, 0.8);
       font-size: 0.8em;
-      text-shadow: 0 0 4px rgba(0,0,0,0.5);
-      
+      text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+
       @media screen and (min-width: 768px) {
         font-size: 0.25em;
         bottom: size(15);
@@ -148,7 +160,7 @@ $color-white: #ffffff;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: sizem(40) sizem(30);
+    padding: sizem(30) sizem(50);
     text-align: center; // 手機版預設置中
 
     @media screen and (min-width: 768px) {
@@ -159,7 +171,7 @@ $color-white: #ffffff;
     .content-box {
       width: 100%;
       max-width: sizem(500); // 手機版限制寬度
-      
+
       @media screen and (min-width: 768px) {
         max-width: 100%;
         text-align: center; // 電腦版標題區塊置中
@@ -169,24 +181,37 @@ $color-white: #ffffff;
 
     .main-title {
       color: $color-green;
-      font-size: size(44);
+      font-size: sizem(28);
       line-height: 1.3;
       margin-bottom: 0.8em;
       font-weight: 400;
-
+      text-align: right;
+      @media screen and (min-width: 768px) {
+        font-size: size(44);
+        text-align: center;
+      }
       .block {
         display: block; // 強制換行
-        &:nth-child(2){
-          font-size: size(36);
+        &:nth-child(2) {
+          font-size: sizem(22);
+          @media screen and (min-width: 768px) {
+            font-size: size(36);
+          }
         }
       }
     }
 
     .sub-title {
       color: $color-text-dark;
-      font-size:size(24);
-      margin-bottom:size(14);
-      line-height: 1.6;
+      font-size: sizem(15);
+      margin-bottom: sizem(10);
+      line-height: 1.7;
+      text-align: right;
+      @media screen and (min-width: 768px) {
+        font-size: size(24);
+        margin-bottom: size(14);
+        text-align: center;
+      }
 
       .mobile-only {
         display: block;
@@ -198,27 +223,41 @@ $color-white: #ffffff;
 
     .desc {
       color: $color-text-gray;
-      font-size: size(20);
+      font-size: sizem(12);
       line-height: 1.8;
       margin-bottom: 2.5em;
-      text-align: justify; // 內文左右對齊 (包含手機與電腦)
-      
+      text-align: right;
+
       @media screen and (min-width: 768px) {
-        font-size: 0.36em; // 電腦版內文字級
+        font-size: size(20);
+        text-align: justify;
       }
     }
 
     .tag {
-      display: inline-block;
-      background-color: $color-green;
-      color: $color-white;
-      padding: 0.8em 2.5em;
-      font-size: size(20);
-      
+      color: #fff;
+      font-size: sizem(10);
+      font-weight: 500;
+      line-height: 1.7;
+
+      width: sizem(85);
+      height: sizem(37);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-color: #8fb538;
+
+      transform: translateY(-100%);
+
       @media screen and (min-width: 768px) {
-        float: left; // 電腦版標籤靠左 (依照圖示)
-        font-size: 0.4em;
-        padding: 0.8em 3em;
+        font-size: size(20);
+        width: size(233);
+        height: size(50);
+        margin-left: auto;
+
+        transform: unset;
       }
     }
   }

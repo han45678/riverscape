@@ -9,7 +9,7 @@
         data-aos="fade-up"
       >
         <img
-          src="http://placehold.jp/320x320.png"
+          src="./s2/1.webp"
           alt="pic"
         />
       </div>
@@ -18,7 +18,7 @@
         data-aos="fade-up"
       >
         <img
-          src="http://placehold.jp/320x320.png"
+          src="./s2/2.webp"
           alt="pic"
         />
       </div>
@@ -27,7 +27,7 @@
         data-aos="fade-up"
       >
         <img
-          src="http://placehold.jp/320x320.png"
+          src="./s2/3.webp"
           alt="pic"
         />
       </div>
@@ -36,7 +36,7 @@
         data-aos="fade-up"
       >
         <img
-          src="http://placehold.jp/320x320.png"
+          src="./s2/4.webp"
           alt="pic"
         />
       </div>
@@ -45,7 +45,7 @@
         data-aos="fade-up"
       >
         <img
-          src="http://placehold.jp/320x320.png"
+          src="./s2/5.webp"
           alt="pic"
         />
       </div>
@@ -54,7 +54,7 @@
         data-aos="fade-up"
       >
         <img
-          src="http://placehold.jp/320x320.png"
+          src="./s2/6.webp"
           alt="pic"
         />
       </div>
@@ -99,13 +99,13 @@
       >
     </div>
 
-    <div class="grid-box">
+    <div class="grid-box bottom">
       <div
         class="img-item"
         data-aos="fade-up"
       >
         <img
-          src="http://placehold.jp/320x320.png"
+          src="./s2/7.webp"
           alt="pic"
         />
       </div>
@@ -114,7 +114,7 @@
         data-aos="fade-up"
       >
         <img
-          src="http://placehold.jp/320x320.png"
+          src="./s2/8.webp"
           alt="pic"
         />
       </div>
@@ -123,7 +123,7 @@
         data-aos="fade-up"
       >
         <img
-          src="http://placehold.jp/320x320.png"
+          src="./s2/9.webp"
           alt="pic"
         />
       </div>
@@ -132,7 +132,7 @@
         data-aos="fade-up"
       >
         <img
-          src="http://placehold.jp/320x320.png"
+          src="./s2/10.webp"
           alt="pic"
         />
       </div>
@@ -141,7 +141,7 @@
         data-aos="fade-up"
       >
         <img
-          src="http://placehold.jp/320x320.png"
+          src="./s2/11.webp"
           alt="pic"
         />
       </div>
@@ -150,7 +150,7 @@
         data-aos="fade-up"
       >
         <img
-          src="http://placehold.jp/320x320.png"
+          src="./s2/12.webp"
           alt="pic"
         />
       </div>
@@ -166,13 +166,11 @@
   width: 100%;
   background-color: #fff;
   overflow: hidden;
-  padding-bottom: sizem(50);
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 0;
   }
 }
 
@@ -206,6 +204,28 @@
 
     &:hover img {
       transform: scale(1.1);
+    }
+  }
+  &.bottom{
+    .img-item{
+      &:nth-child(1){
+        order: 5;
+      }
+      &:nth-child(2){
+        order: 6;
+      }
+      &:nth-child(3){
+        order: 1;
+      }
+      &:nth-child(4){
+        order: 2;
+      }
+      &:nth-child(5){
+        order: 3;
+      }
+      &:nth-child(6){
+        order: 4;
+      }
     }
   }
 }

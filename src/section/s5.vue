@@ -146,6 +146,7 @@ $tag-text: #9cbd46;
         margin-bottom: size(30);
       }
       span {
+        font-size: sizem(22);
         @media screen and (min-width: 768px) {
           font-size: size(34);
         }

@@ -22,7 +22,7 @@
   >
     <S1 />
     <S2 />
-    <!-- <S3 /> -->
+    <S3 />
     <S4 />
     <S5 />
     <S6 />
@@ -50,29 +50,29 @@
   opacity: 0;
 }
 
-.home {
-  background: linear-gradient(to bottom, #009e41 0%, #00a6e9 100%);
-  &::before {
-    content: '';
-    //background: url("@/section/s3/1.webp") center;background-size: 100% auto;
-    width: 120%;
-    height: 120vw;
-    position: fixed;
-    left: -10%;
-    right: 0;
-    top: calc(50% - 60vw);
-    bottom: 0;
-    transform: translateX(0%) rotate(360deg);
-    filter: blur(10px);
-    animation: bg 40s linear infinite;
-    @media screen and (max-width: 767px) {
-      width: 240%;
-      height: 240vw;
-      left: -70%;
-      top: calc(50% - 120vw);
-    }
-  }
-}
+// .home {
+//   // background: linear-gradient(to bottom, #009e41 0%, #00a6e9 100%);
+//   &::before {
+//     content: '';
+//     //background: url("@/section/s3/1.webp") center;background-size: 100% auto;
+//     width: 120%;
+//     height: 120vw;
+//     position: fixed;
+//     left: -10%;
+//     right: 0;
+//     top: calc(50% - 60vw);
+//     bottom: 0;
+//     transform: translateX(0%) rotate(360deg);
+//     filter: blur(10px);
+//     animation: bg 40s linear infinite;
+//     @media screen and (max-width: 767px) {
+//       width: 240%;
+//       height: 240vw;
+//       left: -70%;
+//       top: calc(50% - 120vw);
+//     }
+//   }
+// }
 
 @keyframes bg {
   to {
