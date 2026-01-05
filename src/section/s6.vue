@@ -177,8 +177,9 @@ $color-white: #ffffff;
 
       @media screen and (min-width: 768px) {
         max-width: 100%;
-        text-align: center; // 電腦版標題區塊置中
-        padding-right: 2em; // 與圖片保持一點距離
+        text-align: right; 
+        padding-left: size(90);
+        padding-right: size(100); 
       }
     }
 
@@ -191,7 +192,6 @@ $color-white: #ffffff;
       text-align: right;
       @media screen and (min-width: 768px) {
         font-size: size(44);
-        text-align: center;
       }
       .block {
         display: block; // 強制換行
@@ -213,7 +213,6 @@ $color-white: #ffffff;
       @media screen and (min-width: 768px) {
         font-size: size(24);
         margin-bottom: size(14);
-        text-align: center;
       }
 
       .mobile-only {
@@ -233,7 +232,6 @@ $color-white: #ffffff;
 
       @media screen and (min-width: 768px) {
         font-size: size(20);
-        text-align: justify;
       }
     }
 

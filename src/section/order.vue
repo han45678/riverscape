@@ -191,7 +191,7 @@
 
       <!-- Send -->
       <div
-        class="send mt-8 mx-auto hover:scale-90 btn cursor-pointer"
+        class="send mt-8 mx-auto hover:scale-90 btn cursor-pointer font-['Noto_Serif_TC',serif]"
         @click="send()"
       >
         {{ sending ? '發送中..' : '立即預約' }}
@@ -376,14 +376,15 @@
     letter-spacing: 0.9em;
     text-indent: 0.9em;
     color: #fff;
-    background-color: #8FB538;
-    border: 1px solid #8FB538;
+    background-color: #8fb538;
+    border: 1px solid #8fb538;
     width: 410px;
     height: 72px;
     line-height: 3.3;
     z-index: 10;
     font-weight: 400;
     position: relative;
+    border-radius: 0;
   }
 
   .control {
@@ -425,6 +426,12 @@
       padding-top: 2em;
       .line {
         width: sizem(258);
+      }
+      svg {
+        width: sizem(135);
+        @media screen and (min-width: 768px) {
+          width: size(440);
+        }
       }
     }
     .order-subTitle {

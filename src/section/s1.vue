@@ -9,26 +9,10 @@
         data-aos="zoom-in"
         data-aos-duration="1000"
       >
-        Chill Style
-      </div>
-
-      <div
-        class="t2"
-        data-aos="zoom-in"
-        data-aos-duration="1000"
-        data-aos-delay="200"
-      >
-        <div class="row">台北城南</div>
-        <div class="row">美式生活</div>
-      </div>
-
-      <div
-        class="t3"
-        data-aos="zoom-in"
-        data-aos-duration="1000"
-        data-aos-delay="400"
-      >
-        純住2房・3房
+        <img
+          src="./s1/t1.svg"
+          alt="t1"
+        />
       </div>
     </div>
 
@@ -39,8 +23,10 @@
         data-aos="zoom-in"
         data-aos-delay="600"
       >
-        <span class="zh">鼎吉水岸</span>
-        <span class="en">THE RIVERSCAPE</span>
+        <img
+          src="./s1/logo.svg"
+          alt="logo"
+        />
       </div>
     </div>
   </article>
@@ -85,56 +71,14 @@
   }
 
   .t1 {
-    text-align: left;
-    font-weight: 300;
-    font-size: sizem(24);
-    letter-spacing: sizem(1);
-    margin-bottom: sizem(25);
-    font-style: italic;
-
-    @media screen and (min-width: 768px) {
-      font-size: size(32);
-      margin-bottom: size(35);
-      letter-spacing: size(3);
+    img {
+      width: sizem(245);
+      @media screen and (min-width: 768px) {
+        width: size(320);
+      }
     }
   }
 
-  .t2 {
-    font-weight: 500;
-    line-height: 1.3;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    font-size: sizem(52);
-    letter-spacing: sizem(2);
-
-    .row {
-      display: block; // 強制換行
-    }
-
-    @media screen and (min-width: 768px) {
-      // 電腦版尺寸
-      font-size: size(72);
-      letter-spacing: size(5);
-    }
-  }
-
-  // 副標題 (純住2房...)
-  .t3 {
-    font-weight: 400;
-    opacity: 0.9;
-    // 手機版尺寸
-    font-size: sizem(20);
-    letter-spacing: sizem(2);
-    margin-top: sizem(170);
-
-    @media screen and (min-width: 768px) {
-      // 電腦版尺寸
-      font-size: size(28);
-      letter-spacing: size(3);
-      margin-top: size(250);
-    }
-  }
-
-  // --- 底部 Footer ---
   .footer {
     position: absolute;
     bottom: 0;
@@ -144,17 +88,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // 手機版 Footer 高度與內距
     padding-bottom: sizem(30);
 
     @media screen and (min-width: 768px) {
-      // 電腦版 Footer 高度與內距
       padding-bottom: size(40);
     }
 
     .deco-line {
       width: 100%;
-      // 漸層線高度
       height: sizem(4);
       background: linear-gradient(to right, #8bc34a, #4dd0e1);
       margin-bottom: sizem(15);
@@ -176,24 +117,10 @@
         gap: size(15);
       }
 
-      .zh {
-        font-weight: 600;
-        letter-spacing: 0.1em;
-        font-size: sizem(24);
-
+      img {
+        width: sizem(200);
         @media screen and (min-width: 768px) {
-          font-size: size(32);
-        }
-      }
-
-      .en {
-        color: #999;
-        font-weight: 400;
-        font-size: sizem(10);
-        letter-spacing: 0.05em;
-
-        @media screen and (min-width: 768px) {
-          font-size: size(12);
+          width: size(315);
         }
       }
     }

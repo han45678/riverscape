@@ -62,8 +62,8 @@
           src="./s3/pic03.png"
           alt="pic03"
         />
-        <!-- <p class="directions font-['Noto_Sans_TC',serif]">捷運古亭站 </p>
-        <div class="transportation">Transportation</div> -->
+        <p class="directions font-['Noto_Sans_TC',serif]">捷運古亭站 </p>
+        <!-- <div class="transportation">Transportation</div> -->
       </div>
     </div>
   </div>
@@ -197,7 +197,6 @@
   .s3_2 {
     @media screen and (min-width: 768px) {
       display: flex;
-      align-items: flex-start;
       padding-bottom: size(150);
     }
     .pic {
@@ -334,6 +333,7 @@
     }
 
     .pic {
+      position: relative;
       @media screen and (min-width: 768px) {
         margin-bottom: size(130);
         margin-top: size(170);
@@ -341,6 +341,20 @@
       }
       img{
         width: 100%;
+      }
+
+      .directions {
+        position: absolute;
+        bottom: sizem(10);
+        right: sizem(10);
+        font-size: sizem(8);
+        color: #fff;
+        line-height: 1;
+        @media screen and (min-width: 768px) {
+          bottom: size(10);
+          right: size(10);
+          font-size: size(14);
+        }
       }
     }
   }
