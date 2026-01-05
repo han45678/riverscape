@@ -13,7 +13,7 @@
 
       <div
         class="img-area"
-        data-aos="fade-in"
+        data-aos="zoom-in"
       >
         <img
           src="./s6/pic01.jpg"
@@ -24,21 +24,19 @@
 
       <div
         class="txt-area"
-        data-aos="fade-up"
-        data-aos-delay="200"
       >
         <div class="content-box">
-          <h2 class="main-title">
+          <h2 class="main-title" data-aos="zoom-in">
             <span class="block">以水為靈感</span>
             <span class="block">雕塑流動的城市線條</span>
           </h2>
 
-          <div class="sub-title">
+          <div class="sub-title" data-aos="zoom-in">
             新店溪首排 × 低檯度 × 大開窗 <br class="mobile-only" />
             × 建築即風景
           </div>
 
-          <p class="desc">
+          <p class="desc" data-aos="zoom-in">
             從新店溪水岸的波光律動汲取靈感，鼎吉水岸外觀以「流動」為設計語彙，描繪自然與建築的交融關係。採用低檯度設計，延伸水平視野；搭配大面寬玻璃與簡潔垂直線條，勾勒出極簡而具韻律感的立面藝術。建築不再是冰冷的量體，而是一座與風景共鳴的藝術作品。
           </p>
 

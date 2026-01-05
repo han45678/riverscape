@@ -2,12 +2,12 @@
   <div class="s3 font-['Noto_Serif_TC',serif]">
     <div class="s3_1">
       <div class="text">
-        <h2>
+        <h2 data-aos="zoom-in">
           城南生活
           <span>最會呼吸的地段</span>
         </h2>
-        <h3>從植物園到青年公園，住進台北最Chill的一公里</h3>
-        <p>
+        <h3 data-aos="zoom-in">從植物園到青年公園，住進台北最Chill的一公里</h3>
+        <p data-aos="zoom-in">
           在台北，想過一種不被催促的日子，就住進城南。這裡，是台北最有生活韻味的區域：從紀州庵的詩意午后、植物園的綠意清晨，到中正紀念堂的藝文展演，每一站，都是生活的風景。鼎吉水岸，以水岸純住的姿態，落址在城市最豐饒的節奏中。
         </p>
       </div>
@@ -15,6 +15,7 @@
         <div class="life">life</div>
         <div class="pic_content">
           <img
+            data-aos="zoom-in"
             src="./s3/pic01.png"
             alt="pic"
           />
@@ -24,18 +25,19 @@
     </div>
     <div class="s3_2">
       <div class="text">
-        <h2>
+        <h2 data-aos="zoom-in">
           勝過大安森林
           <span>城南真正的綠生活</span>
         </h2>
-        <h3>被17萬坪綠地環繞的日常，才叫台北的高級自由</h3>
-        <p>
+        <h3 data-aos="zoom-in">被17萬坪綠地環繞的日常，才叫台北的高級自由</h3>
+        <p data-aos="zoom-in">
           青年公園24.6公頃 ×
           中正河濱34公頃，總量超越大安森林的綠意，早晨慢跑、晨泳，午後野餐、網球到傍晚散步，公園不再是目的地，而是生活的延伸。
         </p>
       </div>
       <div class="pic">
         <img
+        data-aos="zoom-in"
           src="./s3/pic02.png"
           alt="pic"
         />
@@ -45,17 +47,18 @@
     </div>
     <div class="s3_3">
       <div class="text">
-        <h2>
+        <h2 data-aos="zoom-in">
           <data> 靜中有動 </data>
           <span><data>三線交會的</data>從容節奏</span>
         </h2>
-        <h3>古亭＋植物園雙站串聯，新蘆＋新店＋萬大線三軌通勤日常</h3>
-        <p>
+        <h3 data-aos="zoom-in">古亭＋植物園雙站串聯，新蘆＋新店＋萬大線三軌通勤日常</h3>
+        <p data-aos="zoom-in">
           城南生活，安靜卻不偏遠。騎車五分鐘古亭雙捷運站+未來萬大線植物園站，三線雙站盡在咫尺，無論是通勤北市、串聯雙北，還是週末藝文走跳，交通節奏恰到好處。
         </p>
       </div>
       <div class="pic">
         <img
+        data-aos="zoom-in"
           src="./s3/pic03.png"
           alt="pic03"
         />
@@ -275,7 +278,7 @@
         order: 2;
         width: 52%;
         margin-top: size(160);
-        padding: size(160) size(260) size(143) size(225);
+        padding: size(160) size(260) size(101) size(225);
       }
     }
   }

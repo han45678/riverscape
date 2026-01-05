@@ -36,7 +36,7 @@ const slideData = [
   >
     <div
       class="txt-header"
-      data-aos="fade-up"
+      data-aos="zoom-in"
       data-aos-delay="0"
     >
       <h2 class="main-title">
@@ -48,7 +48,7 @@ const slideData = [
 
     <div
       class="img-box"
-      data-aos="fade-right"
+      data-aos="zoom-in"
       data-aos-delay="200"
     >
       <div class="brand-tag">Brand</div>

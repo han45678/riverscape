@@ -9,18 +9,19 @@ import { ref } from 'vue';
   >
     <div class="text">
       <div class="text_content">
-        <h2>
+        <h2 
+        data-aos="zoom-in">
           極致選品
           <span>為生活注入國際規格的講究</span>
         </h2>
-        <p>
+        <p data-aos="zoom-in">
           24項全球精選品牌，從裡到外皆是藝術<br />
           在鼎吉水岸，建材不是選配，而是一種品味的基本標準。
         </p>
       </div>
-      <div class="materials">Architecture Materials</div>
+      <div class="materials" data-aos="zoom-in">Architecture Materials</div>
     </div>
-    <div class="logo">
+    <div class="logo" data-aos="zoom-in">
       <img src="./s7/logo1.jpg" alt="logo">
       <img src="./s7/logo2.jpg" alt="logo">
     </div>

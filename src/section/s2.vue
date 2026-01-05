@@ -6,7 +6,7 @@
     <div class="grid-box">
       <div
         class="img-item"
-        data-aos="fade-up"
+        data-aos="zoom-in"
       >
         <img
           src="./s2/1.webp"
@@ -15,7 +15,7 @@
       </div>
       <div
         class="img-item"
-        data-aos="fade-up"
+        data-aos="zoom-in"
       >
         <img
           src="./s2/2.webp"
@@ -24,7 +24,7 @@
       </div>
       <div
         class="img-item"
-        data-aos="fade-up"
+        data-aos="zoom-in"
       >
         <img
           src="./s2/3.webp"
@@ -33,7 +33,7 @@
       </div>
       <div
         class="img-item"
-        data-aos="fade-up"
+        data-aos="zoom-in"
       >
         <img
           src="./s2/4.webp"
@@ -42,7 +42,7 @@
       </div>
       <div
         class="img-item"
-        data-aos="fade-up"
+        data-aos="zoom-in"
       >
         <img
           src="./s2/5.webp"
@@ -51,7 +51,7 @@
       </div>
       <div
         class="img-item"
-        data-aos="fade-up"
+        data-aos="zoom-in"
       >
         <img
           src="./s2/6.webp"
@@ -63,14 +63,14 @@
     <div class="txt-content">
       <h3
         class="sub-title"
-        data-aos="fade-up"
+        data-aos="zoom-in"
         data-aos-delay="200"
       >
         發現台北城南的生活
       </h3>
       <h2
         class="main-title"
-        data-aos="fade-up"
+        data-aos="zoom-in"
         data-aos-delay="400"
       >
         一種講究的態度
@@ -78,13 +78,13 @@
 
       <div class="en-group">
         <p
-          data-aos="fade-up"
+          data-aos="zoom-in"
           data-aos-delay="600"
         >
           The New Way to Live in South Taipei —
         </p>
         <p
-          data-aos="fade-up"
+          data-aos="zoom-in"
           data-aos-delay="800"
         >
           Chill, Classy, and Just Right
@@ -93,7 +93,7 @@
 
       <span
         class="caption"
-        data-aos="fade-in"
+        data-aos="zoom-in"
         data-aos-delay="800"
         >實景圖及情境示意圖</span
       >
@@ -102,7 +102,7 @@
     <div class="grid-box bottom">
       <div
         class="img-item"
-        data-aos="fade-up"
+        data-aos="zoom-in"
       >
         <img
           src="./s2/7.webp"
@@ -111,7 +111,7 @@
       </div>
       <div
         class="img-item"
-        data-aos="fade-up"
+        data-aos="zoom-in"
       >
         <img
           src="./s2/8.webp"
@@ -120,7 +120,7 @@
       </div>
       <div
         class="img-item"
-        data-aos="fade-up"
+        data-aos="zoom-in"
       >
         <img
           src="./s2/9.webp"
@@ -129,7 +129,7 @@
       </div>
       <div
         class="img-item"
-        data-aos="fade-up"
+        data-aos="zoom-in"
       >
         <img
           src="./s2/10.webp"
@@ -138,7 +138,7 @@
       </div>
       <div
         class="img-item"
-        data-aos="fade-up"
+        data-aos="zoom-in"
       >
         <img
           src="./s2/11.webp"
@@ -147,7 +147,7 @@
       </div>
       <div
         class="img-item"
-        data-aos="fade-up"
+        data-aos="zoom-in"
       >
         <img
           src="./s2/12.webp"

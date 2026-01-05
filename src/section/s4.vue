@@ -16,7 +16,7 @@ const isMobile = computed(() =>
     <div class="txt-group">
       <h1
         class="main-title"
-        data-aos="fade-up"
+        data-aos="zoom-in"
         data-aos-delay="0"
       >
         <span class="accent">Casual</span>
@@ -25,7 +25,7 @@ const isMobile = computed(() =>
 
       <div
         class="sub-title"
-        data-aos="fade-up"
+        data-aos="zoom-in"
         data-aos-delay="200"
       >
         The New Way to Live in South Taipei —<br />
@@ -35,7 +35,7 @@ const isMobile = computed(() =>
 
     <div
       class="location-tag"
-      data-aos="fade-right"
+      data-aos="zoom-in"
       data-aos-delay="400"
     >
       Location

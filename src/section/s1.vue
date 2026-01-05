@@ -6,7 +6,7 @@
     <div class="txt">
       <div
         class="t1"
-        data-aos="fade-down"
+        data-aos="zoom-in"
         data-aos-duration="1000"
       >
         Chill Style
@@ -14,7 +14,7 @@
 
       <div
         class="t2"
-        data-aos="fade-up"
+        data-aos="zoom-in"
         data-aos-duration="1000"
         data-aos-delay="200"
       >
@@ -24,7 +24,7 @@
 
       <div
         class="t3"
-        data-aos="fade-up"
+        data-aos="zoom-in"
         data-aos-duration="1000"
         data-aos-delay="400"
       >
@@ -32,13 +32,13 @@
       </div>
     </div>
 
-    <div
-      class="footer"
-      data-aos="fade-in"
-      data-aos-delay="600"
-    >
+    <div class="footer">
       <div class="deco-line"></div>
-      <div class="logo-box">
+      <div
+        class="logo-box"
+        data-aos="zoom-in"
+        data-aos-delay="600"
+      >
         <span class="zh">鼎吉水岸</span>
         <span class="en">THE RIVERSCAPE</span>
       </div>
