@@ -1,6 +1,6 @@
 <template>
   <article
-    class="lifestyle font-['Noto_Serif_TC',serif]"
+    class="lifestyle"
     id="lifestyle"
   >
     <div class="grid-box">
@@ -63,14 +63,14 @@
     <div class="txt-content">
       <h3
         class="sub-title"
-        data-aos="zoom-in"
+        data-aos="fade-right"
         data-aos-delay="200"
       >
         發現台北城南的生活
       </h3>
       <h2
         class="main-title"
-        data-aos="zoom-in"
+        data-aos="fade-right"
         data-aos-delay="400"
       >
         一種講究的態度
@@ -78,13 +78,13 @@
 
       <div class="en-group">
         <p
-          data-aos="zoom-in"
+          data-aos="fade-right"
           data-aos-delay="600"
         >
           The New Way to Live in South Taipei —
         </p>
         <p
-          data-aos="zoom-in"
+          data-aos="fade-right"
           data-aos-delay="800"
         >
           Chill, Classy, and Just Right
@@ -92,7 +92,7 @@
       </div>
 
       <span
-        class="caption"
+        class="caption font-['Noto_Sans_TC',serif]"
         data-aos="zoom-in"
         data-aos-delay="800"
         >實景圖及情境示意圖</span
@@ -277,7 +277,7 @@
     color: #808080;
     font-size: sizem(12);
     line-height: 1.6;
-    font-weight: 500;
+    font-weight: 400;
     padding-left: sizem(50);
     padding-right: sizem(50);
     position: absolute;

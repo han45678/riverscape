@@ -17,41 +17,44 @@ const splideOptions = {
 // 輪播資料
 const slideData = [
   {
-    src: new URL('./s5/pic01.webp', import.meta.url).href,
-    alt: '鼎吉中山',
-    text: '鼎吉中山'
+    src: new URL('./s5/pic01.jpg', import.meta.url).href,
+    alt: '中山區鼎吉中山',
+    text: '中山區鼎吉中山'
   },
   {
-    src: new URL('./s5/pic01.webp', import.meta.url).href,
-    alt: '鼎吉中山',
-    text: '鼎吉中山'
+    src: new URL('./s5/pic02.jpg', import.meta.url).href,
+    alt: '中山區中山ted',
+    text: '中山區中山ted'
+  },
+  {
+    src: new URL('./s5/pic03.jpg', import.meta.url).href,
+    alt: '板橋區菲陽',
+    text: '板橋區菲陽'
   }
 ];
 </script>
 
 <template>
   <article
-    class="s5 font-['Noto_Serif_TC',serif]"
+    class="s5"
     id="s5"
   >
     <div
       class="txt-header"
-      data-aos="zoom-in"
-      data-aos-delay="0"
     >
-      <h2 class="main-title">
+      <h2 class="main-title"
+      data-aos="fade-up">
         以城市遠見<br />
         <span>打造未來的生活藝術</span>
       </h2>
-      <div class="sub-title">國際眼界 × 都會地景 × 建築生活的策展者</div>
+      <div class="sub-title"
+      data-aos="fade-up" data-aos-delay="200">國際眼界 × 都會地景 × 建築生活的策展者</div>
     </div>
 
     <div
       class="img-box"
-      data-aos="zoom-in"
-      data-aos-delay="200"
     >
-      <div class="brand-tag">Brand</div>
+      <div class="brand-tag" data-aos="fade-up">Brand</div>
 
       <Splide
         class="my-splide"
@@ -83,8 +86,7 @@ const slideData = [
       data-aos-delay="400"
     >
       <p>
-        鷹吉建設，不只是建造房子，而是在策劃一種對未來城市的實踐。從選址開始，回應城市脈動與生活趨勢；從規劃之初，即以國際思維對話地景、文化與居住者的生活期待。<br />
-        我們相信，一座建築，不只是所在，更是揭幕未來城市生活風貌。
+        鼎吉建設，不只是建造房子，而是在策劃一種對未來城市的實踐。從選址開始，回應城市脈動與生活趨勢；從規劃之初，即以國際思維對話地景、文化與居住者的生活期待。<br>我們相信，一座建築，不只是所在，更是揭幕未來城市生活風貌。
       </p>
     </div>
   </article>
@@ -114,12 +116,12 @@ $tag-text: #9cbd46;
 
   @media screen and (min-width: 768px) {
     height: 100vh;
-    padding: 0 size(115);
+    padding: 0 size(115) 0 size(115);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     align-content: center;
-    column-gap: size(220);
+    column-gap: size(200);
     font-size: size(55);
   }
 
@@ -139,7 +141,7 @@ $tag-text: #9cbd46;
       font-size: sizem(28);
       color: $color-green;
       margin-bottom: sizem(20);
-      font-weight: 400;
+      font-weight: 600;
 
       @media screen and (min-width: 768px) {
         font-size: size(45);
@@ -155,7 +157,8 @@ $tag-text: #9cbd46;
 
     .sub-title {
       font-size: sizem(14);
-      color: #ccc;
+      color: #FFF;
+    //  font-weight: 500;
       @media screen and (min-width: 768px) {
         font-size: size(24);
       }
@@ -214,6 +217,12 @@ $tag-text: #9cbd46;
         height: 100%;
       }
     }
+    .slide{
+      margin-right:sizem(20);
+      @media screen and (min-width: 768px) {
+      margin-right:size(20);
+      }
+    }
 
     .slide_item {
       width: 100%;
@@ -258,10 +267,11 @@ $tag-text: #9cbd46;
       grid-row: 2;
       align-self: start;
       padding-top: size(15);
+      width: size(600);
     }
 
     p {
-      font-size: sizem(12);
+      font-size: sizem(13);
       line-height: 2.1;
       color: #ddd;
       text-align: justify;
@@ -270,5 +280,6 @@ $tag-text: #9cbd46;
       }
     }
   }
+  
 }
 </style>

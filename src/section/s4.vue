@@ -10,18 +10,14 @@ const isMobile = computed(() =>
 
 <template>
   <section
-    class="hero-section font-['Noto_Serif_TC',serif]"
+    class="hero-section"
     id="hero"
   >
     <div class="txt-group">
-      <h1
-        class="main-title"
+      <img src="./s4/casual.svg" alt="Casuallife"
+      class="main-title"
         data-aos="zoom-in"
-        data-aos-delay="0"
-      >
-        <span class="accent">Casual</span>
-        <span class="white">life</span>
-      </h1>
+        data-aos-delay="0" />
 
       <div
         class="sub-title"
@@ -35,7 +31,7 @@ const isMobile = computed(() =>
 
     <div
       class="location-tag"
-      data-aos="zoom-in"
+      data-aos="fade-right"
       data-aos-delay="400"
     >
       Location
@@ -57,12 +53,11 @@ $color-white: #ffffff;
   @apply relative;
   width: 100%;
   height: 100dvh;
-  background:url("/src/section/s4/bg.webp") 30% center no-repeat;
+  background:url("./s4/bg.jpg") 30% center no-repeat;
   background-size: cover;
   color: $color-white;
   font-size: sizem(14);
   @media screen and (min-width: 768px) {
-    background: url('./s4/bg.webp') bottom center no-repeat;
     background-position: center;
     max-height: size(1080);
     min-height: size(900);
@@ -83,32 +78,7 @@ $color-white: #ffffff;
   }
 
   .main-title {
-    font-weight: 100;
-    line-height: 1;
     margin-bottom: 0.3em;
-    font-style: italic; // 斜體
-
-    span {
-      display: inline-block;
-    }
-
-    .accent {
-      color: $color-green;
-      font-size: 3.5em;
-      margin-right: 0.1em;
-      @media screen and (min-width: 768px) {
-        font-size: size(124);
-      }
-    }
-
-    .white {
-      color: $color-green;
-      font-size: 2.2em; // 調整 life 的大小
-      font-weight: 300;
-      @media screen and (min-width: 768px) {
-        font-size: size(64);
-      }
-    }
   }
 
   .sub-title {
@@ -149,7 +119,6 @@ $color-white: #ffffff;
     right: sizem(10);
     bottom: sizem(10);
     font-size: sizem(8);
-    font-weight: 400;
 
     @media screen and (min-width: 768px) {
       font-size: size(14);

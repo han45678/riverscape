@@ -1,19 +1,30 @@
+<script setup>
+import { computed, getCurrentInstance } from 'vue';
+
+// 假設你的環境有 mixin 或 global properties，若無可移除這段
+const globals = getCurrentInstance()?.appContext.config.globalProperties;
+const isMobile = computed(() =>
+  globals?.$isMobile ? globals.$isMobile() : false
+);
+</script>
 <template>
   <section
-    class="s6 font-['Noto_Serif_TC',serif]"
+    class="s6"
     id="s6"
   >
     <div class="layout-grid">
-      <div class="bar-area">
+      <div class="bar-area" :data-aos="isMobile ? 'fade' : 'fade-right'">
         <img
           src="./s6/bar-area.jpg"
           alt="bar-area"
         />
+      <img src="./s1/gif.gif" alt="gif" class="gif" />
+
       </div>
 
       <div
         class="img-area"
-        data-aos="zoom-in"
+        :data-aos="isMobile ? 'fade-up' : 'fade-left'"
       >
         <img
           src="./s6/pic01.jpg"
@@ -26,21 +37,21 @@
         class="txt-area"
       >
         <div class="content-box">
-          <h2 class="main-title" data-aos="zoom-in">
+          <h2 class="main-title" data-aos="fade-up">
             <span class="block">以水為靈感</span>
             <span class="block">雕塑流動的城市線條</span>
           </h2>
 
-          <div class="sub-title" data-aos="zoom-in">
+          <div class="sub-title" data-aos="fade-up" data-aos-delay="200">
             新店溪首排 × 低檯度 × 大開窗 <br class="mobile-only" />
             × 建築即風景
           </div>
 
-          <p class="desc" data-aos="zoom-in">
+          <p class="desc" data-aos="fade-up" data-aos-delay="400">
             從新店溪水岸的波光律動汲取靈感，鼎吉水岸外觀以「流動」為設計語彙，描繪自然與建築的交融關係。採用低檯度設計，延伸水平視野；搭配大面寬玻璃與簡潔垂直線條，勾勒出極簡而具韻律感的立面藝術。建築不再是冰冷的量體，而是一座與風景共鳴的藝術作品。
           </p>
 
-          <div class="tag">Architecture</div>
+          <div class="tag" data-aos="fade-up" data-aos-delay="600">Architecture</div>
         </div>
       </div>
     </div>
@@ -97,10 +108,12 @@ $color-white: #ffffff;
 
   // 1. 綠色裝飾條
   .bar-area {
+    position: relative;
     grid-area: bar;
     background-color: #8fb538;
     width: 100%;
     height: sizem(25);
+    overflow: hidden;
 
     // 電腦版：直條在左側 (滿高)
     @media screen and (min-width: 768px) {
@@ -117,6 +130,18 @@ $color-white: #ffffff;
       @media screen and (min-width: 768px) {
         display: block;
       }
+      &.gif {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 600%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0.5;
+        mix-blend-mode: overlay;
+        filter: blur(2.9px);
+
+      }
     }
   }
 
@@ -125,7 +150,7 @@ $color-white: #ffffff;
     grid-area: img;
     position: relative;
     width: 100%;
-    height: sizem(500);
+    height: sizem(262);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -188,7 +213,7 @@ $color-white: #ffffff;
       font-size: sizem(28);
       line-height: 1.3;
       margin-bottom: 0.8em;
-      font-weight: 400;
+      font-weight: 600;
       text-align: right;
       @media screen and (min-width: 768px) {
         font-size: size(44);
@@ -225,13 +250,14 @@ $color-white: #ffffff;
 
     .desc {
       color: $color-text-gray;
-      font-size: sizem(12);
-      line-height: 1.8;
-      margin-bottom: 2.5em;
+      font-size: sizem(13);
+      line-height:2;
+      margin-bottom: -1.5em;
       text-align: right;
 
       @media screen and (min-width: 768px) {
         font-size: size(20);
+      margin-bottom: 2.5em;
       }
     }
 
@@ -250,7 +276,7 @@ $color-white: #ffffff;
 
       background-color: #8fb538;
 
-      transform: translateY(-100%);
+     // transform: translateY(-100%);
 
       @media screen and (min-width: 768px) {
         font-size: size(20);
@@ -258,7 +284,7 @@ $color-white: #ffffff;
         height: size(50);
         margin-left: auto;
 
-        transform: unset;
+     //   transform: unset;
       }
     }
   }

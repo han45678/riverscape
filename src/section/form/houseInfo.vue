@@ -6,7 +6,7 @@
   >
     <div class="flex h-full flex-col md:flex-row items-center justify-between">
       <div
-        class="flex-1 items-center justify-center py-10 font-['Noto_Serif_TC',serif]"
+        class="flex-1 items-center justify-center py-10"
       >
         <div
           class="h-full info-box mx-auto flex flex-col items-center justify-center"
@@ -15,7 +15,7 @@
           <div class="info-items mt-4 w-full grid grid-cols-1 md:grid-cols-2">
             <div
               class="item font-bold flex items-center w-full whitespace-nowrap"
-              v-for="item in info.houseInfos"
+              v-for="item in info.houseInfos" :key="item"
             >
               <p
                 class="sub mr-5 pl-2 text-[#fff]"
@@ -77,7 +77,7 @@ $house-c2: #fff;
 
   .title {
     font-size: size(40);
-    font-weight: 700;
+    font-weight: 600;
     color: $house-c1;
     margin: 0 auto 1em auto;
   }
@@ -99,6 +99,7 @@ $house-c2: #fff;
         // min-width: 4.5em;
       }
 
+@media screen and (min-width: 767px) {
       &:nth-child(1){
         order: 1;
       }
@@ -123,6 +124,7 @@ $house-c2: #fff;
       &:nth-child(8){
         order: 8;
       }
+    }
     }
   }
 }

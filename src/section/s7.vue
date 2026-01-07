@@ -1,30 +1,32 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue'
+const isMobile = ref(false)
+onMounted(() => {
+  isMobile.value = window.innerWidth <= 768
+})
 </script>
 
 <template>
   <section
-    class="s7 font-['Noto_Serif_TC',serif]"
+    class="s7"
     id="s7"
   >
     <div class="text">
       <div class="text_content">
         <h2 
-        data-aos="zoom-in">
+        data-aos="fade-up">
           極致選品
           <span>為生活注入國際規格的講究</span>
         </h2>
-        <p data-aos="zoom-in">
+        <p data-aos="fade-up" data-aos-delay="200">
           24項全球精選品牌，從裡到外皆是藝術<br />
           在鼎吉水岸，建材不是選配，而是一種品味的基本標準。
         </p>
       </div>
-      <div class="materials" data-aos="zoom-in">Architecture Materials</div>
+      <div class="materials" data-aos="fade-left" data-aos-delay="200">Architecture Materials</div>
     </div>
-    <div class="logo" data-aos="zoom-in">
-      <img src="./s7/logo1.jpg" alt="logo">
-      <img src="./s7/logo2.jpg" alt="logo">
-    </div>
+      <img src="./s7/logosm.png" class="logo" alt="logo" v-if="isMobile" data-aos="fade-left">
+      <img src="./s7/logos.png" class="logo" alt="logo" v-else data-aos="fade-left">
   </section>
 </template>
 
@@ -90,8 +92,6 @@ $color-text-white: #ffffff;
 
       p {
         text-align: justify;
-
-        font-weight: 500;
         line-height: 1.6;
         @media screen and (min-width: 768px) {
           font-size: size(24);
@@ -102,44 +102,33 @@ $color-text-white: #ffffff;
     .materials {
       margin-top: auto;
       background-color: #c7ff69;
-
       color: #000;
       text-align: center;
-
       font-weight: 500;
       line-height: 1.7;
       display: flex;
       justify-content: center;
       align-items: center;
-
       width: sizem(160);
       height: sizem(37);
-
       position: absolute;
-      bottom: 0;
+      bottom:-1.9em;
       right: 0;
-      transform: translateY(50%);
-
       font-size: sizem(10);
+      z-index: 3;
       @media screen and (min-width: 768px) {
         width: 100%;
         height: size(50);
         font-size: size(20);
         position: static;
-        transform: unset;
       }
     }
   }
   .logo {
     background-color: #fff;
-    padding-left: sizem(50);
-    padding-right: sizem(50);
-    padding-top:  sizem(70);
+   
     height: sizem(405);
     @media screen and (min-width: 768px) {
-      padding-top:  size(20);
-      padding-left: size(30);
-      padding-right: size(30);
       width: 70%;
       height: size(455);
       display: flex;

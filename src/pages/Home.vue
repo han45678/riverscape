@@ -18,7 +18,7 @@
   <!--loading end-->
   <Nav v-if="info.navList.length > 0" />
   <div
-    class="home overflow-hidden font-['Noto_Sans_TC',sans-serif] bg-[#FFF] text-[#000]"
+    class="home overflow-hidden font-['Noto_Serif_TC',serif] bg-[#FFF] text-[#000]"
   >
     <S1 />
     <S2 />
@@ -49,7 +49,9 @@
 .fade-leave-to {
   opacity: 0;
 }
-
+.home {
+   font-weight: 400;
+}
 // .home {
 //   // background: linear-gradient(to bottom, #009e41 0%, #00a6e9 100%);
 //   &::before {

@@ -254,12 +254,12 @@
 @import '@/assets/style/function.scss';
 
 // --- 變數定義 (Variables) ---
-$color-primary: #04836e;
-$color-primary-hover: #01534f;
-$color-dark-blue: #00213e;
+$color-primary: #8FB538;
+$color-primary-hover: #6c8f1c;
+$color-dark-blue: #E6E6E6;
 $color-bg-gray: #e6e6e6;
 $color-text-white: #fff;
-$color-border-light: #c3ad7b55;
+$color-border-light: #0006;
 
 // --- 通用/工具類 (Utilities) ---
 .bg-color1 {
@@ -446,7 +446,7 @@ $color-border-light: #c3ad7b55;
         }
 
         &.address + div {
-          border-radius: 0 0 0.5em 0.5em;
+         // border-radius: 0 0 0.5em 0.5em;
         }
 
         &.googlemap {
@@ -475,7 +475,7 @@ $color-border-light: #c3ad7b55;
       height: 100%;
       font-size: sizem(16);
       font-weight: 400;
-      color: $color-text-white;
+      color: #333;
       border-left: 1px solid $color-border-light;
 
       &:first-child {
@@ -487,7 +487,7 @@ $color-border-light: #c3ad7b55;
         max-width: sizem(16.5);
         height: auto;
         max-height: sizem(16.5);
-        filter: brightness(0) invert(1);
+        filter: brightness(0) invert(.3);
       }
     }
   }
@@ -502,7 +502,7 @@ $color-border-light: #c3ad7b55;
 
 .modal-box {
   img {
-    filter: invert(28%) sepia(62%) saturate(4118%) hue-rotate(158deg) brightness(89%) contrast(97%);
+    filter:  invert(64%) sepia(89%) saturate(336%) hue-rotate(35deg) brightness(88%) contrast(84%);
   }
 }
 </style>

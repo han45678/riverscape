@@ -1,15 +1,14 @@
-const caseName = '佳展建設';
+const caseName = '鼎吉水岸';
 export default {
-  caseid: '91184de3-cfb1-4bcc-8ca2-d91ef7142c5b',
+  caseid: '20c8665b-1c05-4b43-8961-3ed360ea1de5',
   address1: '接待會館', //按鈕區的--- 如空白會只呈現地址
   address2: '接待會館', //map點下確認的--- 如空白會顯示"導航地址"
-  address: '臺南市安南區台江大道一段827號',
-  googleSrc:
-    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.212098659339!2d121.5168728!3d25.0268752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a997800ab6d1%3A0x37e4f08fec95b098!2zMTAw6Ie65YyX5biC5Lit5q2j5Y2A5ZKM5bmz6KW_6Lev5LiA5q61MTI26Jmf!5e0!3m2!1szh-TW!2stw!4v1767536273409!5m2!1szh-TW!2stw',
-  googleLink: 'https://maps.app.goo.gl/ywo7C6gVBNi1dbDd9',
+  address: '台北市中正區和平西路一段126號',
+  googleSrc: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7230.435091152455!2d121.5113896!3d25.0266903!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a996d706f61f%3A0xd11cc3f21523ca7b!2z6byO5ZCJ5rC05bK4IOaOpeW-heacg-mkqA!5e0!3m2!1szh-TW!2stw!4v1767687942367!5m2!1szh-TW!2stw',
+  googleLink: 'https://maps.app.goo.gl/JKKSVBipvGHEgJcg8',
   phone: '(02)2367-9198',
-  fbLink: 'https://www.facebook.com/61578255539676/',
-  fbMessage: 'https://m.me/61578255539676/',
+  fbLink: 'https://www.facebook.com/riverscape.H/',
+  fbMessage: 'https://m.me/riverscape.H/',
   caseName: caseName,
   houseInfos: [
     ['投資興建', '鼎吉建設股份有限公司'],
@@ -18,13 +17,13 @@ export default {
     ['營造工程', '華林營造股份有限公司'],
     ['建照號碼', '112建字第0277號'],
     ['基地地址', '台北市中正區水源路163號'],
-    ['接待中心', '台北市中正區和平西路一段126號1樓'],
+    ['接待中心', '台北市中正區和平西路一段126號'],
     ['企劃銷售', '賦盈廣告行銷股份有限公司']
   ],
-  gtmCode: ['GTM-PZGX9WST'], // 可放置多個
-  //recaptcha_site_key_v2: "6Lep-78UAAAAAMaZLtddpvpixEb8cqu7v7758gLz", //主1
+  gtmCode: ['GTM-00000000'], // 可放置多個
   //recaptcha_site_key_v2: "6LfGUjEaAAAAANYvhZQx5imGm23pRt0V-rOvkpNC", //主2
-  recaptcha_site_key_v2: '6LdbrqAmAAAAAPj2D_6cBbflea1livK9Uud4FGmN', //主3
+  recaptcha_site_key_v2: "6Lep-78UAAAAAMaZLtddpvpixEb8cqu7v7758gLz", //主1
+  //recaptcha_site_key_v2: '6LdbrqAmAAAAAPj2D_6cBbflea1livK9Uud4FGmN', //主3
   recaptcha_site_key: '6Lck-L8UAAAAABxfvNA1NJuBrdl3iLFc3GkudC8s', // recaptcha v3
   recaptcha_user_token: '6Lck-L8UAAAAAIcvenwGDl8_Q1tKbrEYsKuriePa',
   order: {
