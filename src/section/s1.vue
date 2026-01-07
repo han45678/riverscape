@@ -1,7 +1,7 @@
 <template>
   <article class="s1" id="s1">
     <div class="bg">
-      <img src="./s1/bg.jpg" alt="bg" class="bg0" />
+      <div class="bg0"><img src="./s1/bg.webp" alt="bg" /><img src="./s1/bg.webp" alt="bg" /></div>
       <img src="./s1/gif.gif" alt="gif" class="gif" />
     </div>
     <div class="txt">
@@ -21,6 +21,11 @@
 <style lang="scss" scoped>
 // 引入您的全域 function (確保路徑正確)
 @import '@/assets/style/function.scss';
+@keyframes an {
+  to {
+    transform: translateX(0%);
+  }
+}
 
 .s1 {
   position: relative;
@@ -51,20 +56,23 @@
     overflow: hidden;
     z-index: 0;
     border-bottom: sizem(10) solid #C7FF69;
+    background: #8fb538;
 
     @media screen and (min-width: 768px) {
       height: size(798);
       border-bottom: size(14) solid #C7FF69;
+    }
+    .bg0{white-space: nowrap;
+      height: 100%;
+      aspect-ratio: 4000/798;
+      transform: translateX(-50%);
+    animation: an 70s linear infinite reverse;
     }
 
     img {
       vertical-align: middle;
       width: auto;
       height: 100%;
-
-      @media screen and (min-width: 768px) {
-        width: 100%;
-      }
 
       &.gif {
         position: absolute;

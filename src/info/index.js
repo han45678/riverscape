@@ -4,7 +4,7 @@ export default {
   address1: '接待會館', //按鈕區的--- 如空白會只呈現地址
   address2: '接待會館', //map點下確認的--- 如空白會顯示"導航地址"
   address: '台北市中正區和平西路一段126號',
-  googleSrc: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7230.435091152455!2d121.5113896!3d25.0266903!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a996d706f61f%3A0xd11cc3f21523ca7b!2z6byO5ZCJ5rC05bK4IOaOpeW-heacg-mkqA!5e0!3m2!1szh-TW!2stw!4v1767687942367!5m2!1szh-TW!2stw',
+  googleSrc: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3615.2849943033348!2d121.51373079618811!3d25.02440059248692!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a992b61df5cd%3A0xd768b9b4d62f3deb!2z6byO5ZCJ5rC05bK4!5e0!3m2!1szh-TW!2stw!4v1767775625453!5m2!1szh-TW!2stw',
   googleLink: 'https://maps.app.goo.gl/JKKSVBipvGHEgJcg8',
   phone: '(02)2367-9198',
   fbLink: 'https://www.facebook.com/riverscape.H/',
@@ -34,7 +34,7 @@ export default {
   // 控制固定板的新欄位
   // room_type: ["兩房","三房"],
   selectFields: {
-    sex: {
+    gender: {
       title: '性別',
       hold: '請選擇性別',
       option: ['男', '女'], // 選項放在這裡

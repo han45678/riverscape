@@ -17,7 +17,7 @@
           v-if="info.phone"
         >
           <img
-            src="//h35.banner.tw/img//form/phone.svg"
+            src="//h35.banner.tw/img/form/phone.svg"
             alt="電話"
             srcset=""
           />
@@ -27,12 +27,12 @@
           class="flex contact-item justify-center items-center"
           @click="
             modalOpen = true;
-            modalType = 'fb';
+            modalType = 'messenger';
             onMsgClick();
           "
         >
           <img
-            src="//h35.banner.tw/img//form/messenger.svg"
+            src="//h35.banner.tw/img/form/messenger.svg"
             alt="Facebook 諮詢"
             srcset=""
           />
@@ -46,7 +46,7 @@
           "
         >
           <img
-            src="//h35.banner.tw/img//form/fb.svg"
+            src="//h35.banner.tw/img/form/fb.svg"
             alt="前往粉絲專頁"
             srcset=""
           />
@@ -72,7 +72,7 @@
           "
         >
           <img
-            src="//h35.banner.tw/img//form/gmap.svg"
+            src="//h35.banner.tw/img/form/gmap.svg"
             alt="導航 GoogleMap"
             srcset=""
           />
@@ -97,7 +97,7 @@
       v-if="info.phone"
     >
       <img
-        src="//h35.banner.tw/img//form/phone.svg"
+        src="//h35.banner.tw/img/form/phone.svg"
         alt="撥打電話"
         srcset=""
       />
@@ -107,12 +107,12 @@
       class="flex flex-1 flex-col contact-item justify-center items-center"
       @click="
         modalOpen = true;
-        modalType = 'fb';
+        modalType = 'messenger';
         onMsgClick();
       "
     >
       <img
-        src="//h35.banner.tw/img//form/messenger.svg"
+        src="//h35.banner.tw/img/form/messenger.svg"
         alt="FB 諮詢"
         srcset=""
       />
@@ -123,7 +123,7 @@
       @click="scrollTo('.order')"
     >
       <img
-        src="//h35.banner.tw/img//form/pen.svg"
+        src="//h35.banner.tw/img/form/pen.svg"
         alt="預約賞屋"
         srcset=""
       />
@@ -167,21 +167,21 @@
       <img
         class="h-12"
         v-if="modalType == 'phone'"
-        src="//h35.banner.tw/img//form/phone.svg"
+        src="//h35.banner.tw/img/form/phone.svg"
         alt="phone"
         srcset=""
       />
       <img
         class="h-12"
-        v-else-if="modalType == 'fb'"
-        src="//h35.banner.tw/img//form/messenger.svg"
-        alt="fb"
+        v-else-if="modalType == 'messenger'"
+        src="//h35.banner.tw/img/form/messenger.svg"
+        alt="messenger"
         srcset=""
       />
       <img
         class="h-12"
         v-else-if="modalType == 'gmap'"
-        src="//h35.banner.tw/img//form/gmap.svg"
+        src="//h35.banner.tw/img/form/gmap.svg"
         alt="gmap"
         srcset=""
       />
@@ -190,7 +190,7 @@
         {{
           modalType == 'phone'
             ? '賞屋專線'
-            : modalType == 'fb'
+            : modalType == 'messenger'
             ? 'Facebook Messenger'
             : `${info.address2 ? info.address2 : '導航地址'}`
         }}
@@ -200,7 +200,7 @@
         {{
           modalType == 'phone'
             ? info.phone
-            : modalType == 'fb'
+            : modalType == 'messenger'
             ? '線上諮詢'
             : `${info.address}`
         }}
@@ -212,7 +212,7 @@
         v-if="modalType != 'phone'"
         v-bind:class="{
           hidden: modalType == 'phone' && !$isMobile(),
-          btlead: modalType == 'fb',
+          btlead: modalType == 'messenger',
           btsearch: modalType == 'gmap',
           btcontac: modalType == 'phone'
         }"
@@ -220,7 +220,7 @@
         {{
           modalType == 'phone'
             ? '撥打電話'
-            : modalType == 'fb'
+            : modalType == 'messenger'
             ? '立即諮詢'
             : '開啟導航'
         }}
@@ -233,7 +233,7 @@
         v-else
         v-bind:class="{
           hidden: modalType == 'phone' && !$isMobile(),
-          btlead: modalType == 'fb',
+          btlead: modalType == 'messenger',
           btsearch: modalType == 'gmap',
           btcontac: modalType == 'phone'
         }"
@@ -241,7 +241,7 @@
         {{
           modalType == 'phone'
             ? '撥打電話'
-            : modalType == 'fb'
+            : modalType == 'messenger'
             ? '立即諮詢'
             : '開啟導航'
         }}
@@ -518,7 +518,7 @@ const go = () => {
     setTimeout(() => {
       window.location.href = 'phoneThanks';
     }, 1000);
-  } else if (modalType.value == 'fb') {
+  } else if (modalType.value == 'messenger') {
     window.open(info.fbMessage);
   } else if (modalType.value == 'gmap') {
     window.open(info.googleLink);
