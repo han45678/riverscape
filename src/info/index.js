@@ -20,7 +20,7 @@ export default {
     ['接待中心', '台北市中正區和平西路一段126號'],
     ['企劃銷售', '賦盈廣告行銷股份有限公司']
   ],
-  gtmCode: ['GTM-00000000'], // 可放置多個
+  gtmCode: ['GTM-PQDNXWNQ'], // 可放置多個
   recaptcha_site_key_v2: "6LfGUjEaAAAAANYvhZQx5imGm23pRt0V-rOvkpNC", //主2
   //recaptcha_site_key_v2: "6Lep-78UAAAAAMaZLtddpvpixEb8cqu7v7758gLz", //主1
   //recaptcha_site_key_v2: '6LdbrqAmAAAAAPj2D_6cBbflea1livK9Uud4FGmN', //主3
